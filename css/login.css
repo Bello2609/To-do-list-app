@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+body{
+    position: relative;
+    background: url("../img/video-bg.jpg")!important;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.overlay{
+    position: absolute;
+    top: 0px;
+    bottom: 0%;
+    background: #740e038a;
+    width: 100%;
+    height: 1100px;
+    overflow: hidden;
+}
+.img-responsive{
+    border-radius: 100%;
+    height: 110px;
+    width:30%;
+    position: relative;
+    top: -85px;
+     margin-left: 120px;
+}
+.form{
+    display: block;
+    position: realtive;
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    margin: 150px auto;
+    padding: 30px;
+    border-radius: 5%;
+    z-index: 2;
+}
+label{
+    display: block;
+    position: relative;
+    top: -20px;
+    left: 0px;
+    color: #999;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    z-index: 1;
+    transition: all 0.7s ease;
+}
+
+input{
+    display: block;
+    position: relative;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    z-index: 2;
+}
+input:focus, input:valid{
+    outline: none;
+    border-bottom: 2px solid #00aced;
+    
+}
+input:focus + label, input:valid + label{
+    top: -40px;
+    font-size: 11px;
+    color: #00aced;
+}
+.divider{
+    position: relative;
+    height: 50px;
+    width: auto;
+    background: none;
+}
+/* styling for the login button */
+button{
+    height: 50px;
+    width: 100px;
+    outline: none;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #ffc400;
+    color:  rgb(167, 9, 9);
+    transition: width 0.5s ease;
+    margin-left: 110px;
+}
+button:hover{
+    width: 130px;
+    transition: width 0.5s ease;
+}
+.fa-sign-in-alt:hover{
+    display: none;
+}
+/* the forget password */
+.forget-password{
+    margin-top: 30px;
+    color: red !important;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* the styling for the message when the password field is click*/
+#message{
+    color: rgba(255, 0, 0, 0.651);
+    display: none;
+    height: 170px;
+}
+/* add a green text color when the a checkmark when the requirement is correct */
+.valid{
+    color: green;
+}
+.valid:before{
+    position: relative;
+    left: -35px;
+    content: "";
+}
+.invalid{
+    color: red;
+    margin-bottom: 2px;
+}
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "";
+}
+/* prompt msg */
+h5{
+    color: red;
+    font-size: 13px;
+    transition: all 0.9s ease-in;
+    height: 25px;
+    /* margin-bottom: 2px; */
+   
+}
+      
