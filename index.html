@@ -1,0 +1,214 @@
+<!-- 
+    =======================================
+    * time management application
+    ======================================
+    designed by Bello Hadi(general bello)
+    version 1.0
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Time Management</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="img/slide-img1.jpg" type="image/x-icon">
+    
+    
+
+</head>
+<body>
+    <section class="cover-all">
+    
+                    <header>
+                            <nav>
+                                <div class="to-do"><p class="todo">To Do App</p></div>
+                                <div class="hamburger">
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                    <div class="line"></div>
+                                </div>
+                                <ul class="nav-links">
+                                    <li><a href="index.html"><i class="fa fa-home"></i>HOME</a></li>
+                                    <li><a href="todo.html"><i class="fas fa-pen"></i>TODO'S</a></li>
+                                    <li><a href="login.html"><i class="fas fa-sign-out-alt"></i>LOG-OUT</i></a></li>
+                                </ul>
+                            </nav>
+                        </header>
+                        <!-- card stat -->
+    <section class="content">
+      <div class="container">
+          <div class="row">
+                <div class="col-sm-3 col-md-4">
+                    <div class="card mt-4">
+                        <div class="card-body">
+                                <div class="row">
+                                        <div class="col text">
+                                            <div class="card-text text-success"> 
+                                                <p>Todays date:</p>
+                                                <b></b>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="icon icon-shape">
+                                                <i class="fas fa-calendar"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="col-sm-3 col-md-4">
+                    <div class="card mt-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col text">
+                                    <div class="card-text text-success"> 
+                                        <p>The time says:</p>
+                                        <strong></strong>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="icon icon-shape">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-sm-3 col-md-4">
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                    <div class="row">
+                                            <div class="col text">
+                                                <div class="card-text text-success"> 
+                                                    <p>welcome</p>
+                                                    <span>Bello Hadi</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto">
+                                                <div class="icon icon-shape">
+                                                    <i class="fas fa-user"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>   
+                    </div>
+          </div>
+      </div>
+    </section>
+    <!-- panel session -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 col-md-6">
+                    <div class="panel mt-3">
+                        <div class="panel-heading">
+                           <h4>
+                                HOW IT WORKS
+                           </h4>
+                        </div>
+                        <hr>
+                        <div class="panel-body pl-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Rerum nobis voluptatum molestias exercitationem ipsa accusantium, 
+                            dolores obcaecati modi quos molestiae? Accusantium, numquam neque 
+                            mollitia dignissimos tempore sapiente. Et, vel natus.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-6">
+                        <div class="panel mt-3">
+                                <div class="panel-heading">
+                                   <h4 class="panel-title">
+                                        HOW TO USE THE APP
+                                   </h4>
+                                </div>
+                                <hr>
+                                <div class="panel-body pl-2">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Rerum nobis voluptatum molestias exercitationem ipsa accusantium, 
+                                    dolores obcaecati modi quos molestiae? Accusantium, numquam neque 
+                                    mollitia dignissimos tempore sapiente. Et, vel natus.
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- the is where the clicking of the event works so click the button below and see the wonders that will haoppen  -->
+    <!-- the event session -->
+                        <div class="the-main">
+                                <div class="the-main-event">
+                                    <button type="submit" id="button-create"><span>+<span> Create Task</button>
+                                </div>
+                        </div>
+                        <!-- modal session -->
+                        
+                        <section  class="modal">
+                            <div class="modal_modal">
+                                <div class="close pt-0">
+                                    <p id="clear">+</p>
+                                </div>
+                                <div class="modal-class">
+                                    <div class="modal-todo">
+                                        <!-- pop up -->
+                                        <h3 class="message"></h3>
+                                        <!-- pop up end -->
+                                        <form action="todo.html"  class="form form-horizontal" role="form">
+                                             <!-- task field -->
+                                             <div class="form-group">
+                                                 <label for="name" class="control-label">Task Name</label>
+                                             <input type="text" class="form-control" name="name" id="task-name"autocomplete="off" required/>
+                                             </div>
+                                             <!-- location field -->
+                                             <div class="form-group">
+                                                 <label for="Password" class="control-label">Location</label>
+                                                     <input type="text" class="form-control" name="Password" id="location" autocomplete="off" required/>
+                                             </div>
+                                                 <!-- textarea field -->
+                                                 <div class="form-group">
+                                                     <textarea name="description" class="form-control" id="textarea" placeholder="add your description" id="" cols="40" rows="4"></textarea>
+                                                 </div>
+                                                 <!-- time and date field-->
+                                                 <div class="form-group">
+                                                 <label class="control-label">Set Date and Time</label>
+                                                 <input type="datetime-local"class="form-control" name="" id="date and time" class="datetime-local"required/>
+                                                 </div>
+                                                 <!-- save button -->
+                                             <div class="login-button form-group">
+                                                 <button class="button btn btn-success" id="button" type="submit">SAVE  <i class="fas fa-sign-in-alt" id="class"></i></button>
+                                             </div>
+                                         </form>
+                                     </div> 
+                                </div>
+                                 
+    
+                            </div>
+                        </section>
+                    
+                    
+                        
+            
+               </section>         
+            <footer>
+                <p>&copy devspider</p>
+            </footer>
+        
+                    <!-- </div>
+        </div>
+    </div> -->
+    <script src="javascript/jquery-3.4.1.min.js"></script>
+    <script src="javascript/all.min.js"></script>
+    <script src="javascript/bootstrap.min.js"></script>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/task.js"></script>
+</body>
+</html>
